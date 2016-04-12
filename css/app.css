@@ -1,0 +1,17 @@
+#nav{
+    background-color: black;
+    
+}
+
+#nav a{
+    color: aliceblue;
+    font-size: 2em;
+    font-family: fantasy;
+    padding: 10%;
+}
+
+#nav li a:hover{
+    background-color: aliceblue;
+    color: black;
+    font-family:popular cafea;
+}
