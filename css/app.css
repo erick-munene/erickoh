@@ -1,17 +1,30 @@
+body{
+    background-image: url(/images/abstract-minimalistic_00251112.jpg);
+}
 #nav{
-    background-color: black;
+
+    border-bottom-right-radius: 2em;
+    border-color: aqua;
+    width: 100%;
     
 }
 
 #nav a{
-    color: aliceblue;
-    font-size: 2em;
-    font-family: fantasy;
+    color: cyan;
+    font-size: 1em;
+    font-family: ritzyremixnf;
     padding: 10%;
 }
 
 #nav li a:hover{
-    background-color: aliceblue;
-    color: black;
-    font-family:popular cafea;
+    background-color: transparent;
+    color: gold;
+    font-family:ricks american nf;
 }
+
+#two{
+    
+    color: aliceblue;
+}
+
+/*............pre loader..................*/
