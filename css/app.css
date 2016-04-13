@@ -1,30 +1,8 @@
 body{
-    background-image: url(/images/abstract-minimalistic_00251112.jpg);
+    background-color: black;
 }
-#nav{
 
-    border-bottom-right-radius: 2em;
-    border-color: aqua;
-    width: 100%;
+#main{
     
+    margin-top: 0 auto;
 }
-
-#nav a{
-    color: cyan;
-    font-size: 1em;
-    font-family: ritzyremixnf;
-    padding: 10%;
-}
-
-#nav li a:hover{
-    background-color: transparent;
-    color: gold;
-    font-family:ricks american nf;
-}
-
-#two{
-    
-    color: aliceblue;
-}
-
-/*............pre loader..................*/
