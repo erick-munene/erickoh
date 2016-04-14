@@ -7,25 +7,73 @@ body{
     margin-top: 10%;
 }
 
-#nav a{
-    color: black;
-    font-family: popular cafe nf;
-    font-size: 2em;
-        
 
+
+#content a{
+    color: cyan;
 }
 
-#nav li {
-    background-color: #2F5B6D;
+#content a:hover{
+    
+    color: lawngreen;
 }
 
-#nav a:hover{
-    background-color: cyan;
+/*...........naavigation.................*/
+
+
+#nav{
+
 }
-
-
-
-
+ul#navbar{
+	list-style-type: none;
+	background: #000000;
+	padding-left: 30%;
+}
+ul#navbar li{
+	display: inline-block;
+}
+ul#navbar li a{
+	display: block;
+	text-decoration: none;
+	color: #ffffff;
+	background: #000000;
+	padding: 20px;
+	font-size: 1.2em;
+	transition: all 0.5s ease;
+}
+ul#navbar li a:hover{
+	background: #ffffff;
+	color: #000000;
+}
+@media (max-width: 480px){
+	ul#navbar{
+		padding-left: 0;
+	}
+	ul#navbar li{
+		display: block;
+	}
+	ul#navbar li a{
+		display: block;
+		text-align: center;
+	}
+}
+@media (min-width: 481px) and (max-width: 767px){
+	ul#navbar{
+		padding-left: 0;
+	}
+	ul#navbar li{
+		display: block;
+	}
+	ul#navbar li a{
+		display: block;
+		text-align: center;
+	}
+}
+@media (min-width: 768px) and (max-width: 991px){
+	ul#navbar{
+		padding-left: 25%;
+	}
+}
 
 /*.............loader................*/
 
