@@ -9,10 +9,21 @@ body{
 
 #nav a{
     color: black;
-    
-    
-    
+    font-family: popular cafe nf;
+    font-size: 2em;
+        
+
 }
+
+#nav li {
+    background-color: #2F5B6D;
+}
+
+#nav a:hover{
+    background-color: cyan;
+}
+
+
 
 
 
