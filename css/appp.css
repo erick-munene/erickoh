@@ -199,15 +199,19 @@ body {
 }
 .slide-one {
   background-image: url('../images/1.png');
+    max-width: 300px;
 }
 .slide-two {
   background-image: url("../images/2.png");
+    max-width: 300px;
 }
 .slide-three {
   background-image: url("../images/3.png");
+    max-width: 300px;
 }
 .slide-four {
   background-image: url('../images/Website.jpg');
+    max-width: 300px;
 }
 .slide h1 {
   opacity: 0;
