@@ -641,7 +641,7 @@
             /*........................social media................*/
             @charset "UTF-8";
             .hero {
-                background: url("http://www.banksy-wallpaper.com/wallpapers/800x600/10-i-am-father.jpg") no-repeat center center;
+                background: url("http://www.banksy-wallpaper.com/wallapers/800x600/10-i-am-father.jpg") no-repeat center center;
                 background-size: cover;
                 height: 50vh;
                 overflow: hidden;
@@ -744,9 +744,4 @@
             }
             .logo i {
                 margin-right: 0.5rem;
-            }
-            #ccc {
-                float: right;
-                display: inline-block;
-                width: 100%;
             }
