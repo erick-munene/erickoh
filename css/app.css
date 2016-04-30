@@ -1,757 +1,757 @@
-                                                html {
-                                                background-image: url(../images/black.jpg);
-                                                height: 100%;
-                                                background-repeat: no-repeat;
-                                                height: 120%;
-                                            }
-                                            #container {}
-                                            #about {
-                                                text-align: center;
-                                            }
-                                            #about h1 {
-                                                margin-top: 25%;
-                                                color: ghostwhite;
-                                                font-size: 2.5em;
-                                            }
-                                            #about p {
-                                                margin-top: 1em;
-                                                font-size: 2em;
-                                            }
-                                            /*=========================loader====================*/
-                                            /*.............loader................*/
-                                            
-                                            #loader-wrapper {
-                                                position: fixed;
-                                                top: 0;
-                                                left: 0;
-                                                width: 100%;
-                                                height: 100%;
-                                                z-index: 1000;
-                                            }
-                                            #loader {
-                                                display: block;
-                                                position: relative;
-                                                left: 50%;
-                                                top: 50%;
-                                                width: 150px;
-                                                height: 150px;
-                                                margin: -75px 0 0 -75px;
-                                                border: 3px solid #3498db;
-                                                z-index: 1500;
-                                            }
-                                            #loader:before {
-                                                content: "";
-                                                position: absolute;
-                                                top: 5px;
-                                                left: 5px;
-                                                right: 5px;
-                                                bottom: 5px;
-                                                border: 3px solid #e74c3c;
-                                            }
-                                            #loader:after {
-                                                content: "";
-                                                position: absolute;
-                                                top: 15px;
-                                                left: 15px;
-                                                right: 15px;
-                                                bottom: 15px;
-                                                border: 3px solid #f9c922;
-                                            }
-                                            /* change border to transparent and set only border-top to a solid color */
-                                            
-                                            #loader {
-                                                border: 3px solid transparent;
-                                                border-top-color: #3498db;
-                                            }
-                                            #loader:before {
-                                                border: 3px solid transparent;
-                                                border-top-color: #e74c3c;
-                                            }
-                                            #loader:after {
-                                                border: 3px solid transparent;
-                                                border-top-color: #f9c922;
-                                            }
-                                            #loader {
-                                                border-radius: 50%;
-                                            }
-                                            #loader:before {
-                                                border-radius: 50%;
-                                            }
-                                            #loader:after {
-                                                border-radius: 50%;
-                                            }
-                                            /* copy and paste the animation inside all 3 elements */
-                                            /* #loader, #loader:before, #loader:after */
-                                            
-                                            -webkit-animation: spin 1.5s linear infinite;
-                                            animation: spin 1.5s linear infinite;
-                                            /* include this only once */
-                                            
-                                            @-webkit-keyframes spin {
-                                                0% {
-                                                    -webkit-transform: rotate(0deg);
-                                                    /* Chrome, Opera 15+, Safari 3.1+ */
-                                                    -ms-transform: rotate(0deg);
-                                                    /* IE 9 */
-                                                    transform: rotate(0deg);
-                                                    /* Firefox 16+, IE 10+, Opera */
-                                                }
-                                                100% {
-                                                    -webkit-transform: rotate(360deg);
-                                                    /* Chrome, Opera 15+, Safari 3.1+ */
-                                                    -ms-transform: rotate(360deg);
-                                                    /* IE 9 */
-                                                    transform: rotate(360deg);
-                                                    /* Firefox 16+, IE 10+, Opera */
-                                                }
-                                            }
-                                            @keyframes spin {
-                                                0% {
-                                                    -webkit-transform: rotate(0deg);
-                                                    /* Chrome, Opera 15+, Safari 3.1+ */
-                                                    -ms-transform: rotate(0deg);
-                                                    /* IE 9 */
-                                                    transform: rotate(0deg);
-                                                    /* Firefox 16+, IE 10+, Opera */
-                                                }
-                                                100% {
-                                                    -webkit-transform: rotate(360deg);
-                                                    /* Chrome, Opera 15+, Safari 3.1+ */
-                                                    -ms-transform: rotate(360deg);
-                                                    /* IE 9 */
-                                                    transform: rotate(360deg);
-                                                    /* Firefox 16+, IE 10+, Opera */
-                                                }
-                                            }
-                                            #loader {
-                                                -webkit-animation: spin 2s linear infinite;
-                                                animation: spin 2s linear infinite;
-                                            }
-                                            #loader:before {
-                                                -webkit-animation: spin 3s linear infinite;
-                                                animation: spin 3s linear infinite;
-                                            }
-                                            #loader-wrapper .loader-section {
-                                                position: fixed;
-                                                top: 0;
-                                                width: 51%;
-                                                height: 100%;
-                                                background: black;
-                                                z-index: 1000;
-                                            }
-                                            #loader-wrapper .loader-section.section-left {
-                                                left: 0;
-                                            }
-                                            #loader-wrapper .loader-section.section-right {
-                                                right: 0;
-                                            }
-                                            #loader {
-                                                z-index: 1001;
-                                                /* anything higher than z-index: 1000 of .loader-section */
-                                            }
-                                            #content h2 {
-                                                margin-top: 10%;
-                                                color: cyan;
-                                                font-family: Ritzyremixnf;
-                                            }
-                                            #content p {
-                                                color: #EEEEEE;
-                                            }
-                                            #content {
-                                                margin: 0 auto;
-                                                padding-bottom: 50px;
-                                                width: 80%;
-                                                max-width: 978px;
-                                            }
-                                            .loaded #loader-wrapper .loader-section.section-left {
-                                                -webkit-transform: translateX(-100%);
-                                                /* Chrome, Opera 15+, Safari 3.1+ */
-                                                -ms-transform: translateX(-100%);
-                                                /* IE 9 */
-                                                transform: translateX(-100%);
-                                                /* Firefox 16+, IE 10+, Opera */
-                                            }
-                                            .loaded #loader-wrapper .loader-section.section-right {
-                                                -webkit-transform: translateX(100%);
-                                                /* Chrome, Opera 15+, Safari 3.1+ */
-                                                -ms-transform: translateX(100%);
-                                                /* IE 9 */
-                                                transform: translateX(100%);
-                                                /* Firefox 16+, IE 10+, Opera */
-                                            }
-                                            .loaded #loader {
-                                                opacity: 0;
-                                            }
-                                            .loaded #loader-wrapper {
-                                                visibility: hidden;
-                                            }
-                                            .loaded #loader {
-                                                opacity: 0;
-                                                -webkit-transition: all 0.3s ease-out;
-                                                transition: all 0.3s ease-out;
-                                            }
-                                            .loaded #loader-wrapper .loader-section.section-right,
-                                            .loaded #loader-wrapper .loader-section.section-left {
-                                                -webkit-transition: all 0.3s 0.3s ease-out;
-                                                transition: all 0.3s 0.3s ease-out;
-                                            }
-                                            .loaded #loader-wrapper {
-                                                -webkit-transform: translateY(-100%);
-                                                -ms-transform: translateY(-100%);
-                                                transform: translateY(-100%);
-                                                -webkit-transition: all 0.3s 0.6s ease-out;
-                                                transition: all 0.3s 0.6s ease-out;
-                                            }
-                                            .loaded #loader-wrapper .loader-section.section-right,
-                                            .loaded #loader-wrapper .loader-section.section-left {
-                                                -webkit-transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1.000);
-                                                transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1.000);
-                                            }
-                                            .loaded #loader-wrapper {
-                                                -webkit-transform: translateY(-100%);
-                                                -ms-transform: translateY(-100%);
-                                                transform: translateY(-100%);
-                                                -webkit-transition: all 0.3s 1s ease-out;
-                                                transition: all 0.3s 1s ease-out;
-                                            }
-                                            .no-js #loader-wrapper {
-                                                display: none;
-                                            }
-                                            .no-js h1 {
-                                                color: #222222;
-                                            }
-                                            /*=========================end loader====================*/
-                                            /*=========================navigation====================*/
-                                            
-                                            #nav {
-                                                border-bottom-left-radius: 2em;
-                                                border-top-left-radius: 2em;
-                                            }
-                                            .main_h {
-                                                position: fixed;
-                                                top: 0px;
-                                                max-height: 12%;
-                                                z-index: 999;
-                                                width: 100%;
-                                                padding-top: 1.5%;
-                                                background: none;
-                                                overflow: hidden;
-                                                -webkit-transition: all 0.3s;
-                                                transition: all 0.3s;
-                                                opacity: 0;
-                                                top: -100px;
-                                                padding-bottom: 6px;
-                                                font-family: "Montserrat", sans-serif;
-                                            }
-                                            @media only screen and (max-width: 766px) {
-                                                .main_h {
-                                                    padding-top: 25px;
-                                                }
-                                            }
-                                            .open-nav {
-                                                max-height: 400px !important;
-                                            }
-                                            .open-nav .mobile-toggle {
-                                                transform: rotate(-90deg);
-                                                -webkit-transform: rotate(-90deg);
-                                            }
-                                            .sticky {
-                                                background-color: black;
-                                                opacity: 0.85;
-                                                top: 0px;
-                                                border-bottom: 0.14em solid gainsboro;
-                                            }
-                                            .logo {
-                                                width: 5%;
-                                                font-size: 1.5em;
-                                                color: ghostwhite;
-                                                text-transform: uppercase;
-                                                float: left;
-                                                display: block;
-                                                margin-top: 0;
-                                                margin-left: 1em;
-                                                line-height: 1;
-                                                margin-bottom: 10%;
-                                            }
-                                            @media only screen and (max-width: 766px) {
-                                                .logo {
-                                                    float: none;
-                                                }
-                                            }
-                                            nav {
-                                                float: right;
-                                                width: 60%;
-                                            }
-                                            @media only screen and (max-width: 766px) {
-                                                nav {
-                                                    width: 100%;
-                                                }
-                                            }
-                                            nav ul {
-                                                list-style: none;
-                                                overflow: hidden;
-                                                text-align: right;
-                                                float: right;
-                                            }
-                                            nav li:hover {
-                                                transition: 0.6s ease;
-                                                border-bottom: 1em solid #e8f380;
-                                            }
-                                            nav a:hover {
-                                                color: #e8f380;
-                                            }
-                                            @media only screen and (max-width: 766px) {
-                                                nav ul {
-                                                    padding-top: 10px;
-                                                    margin-bottom: 22px;
-                                                    float: left;
-                                                    text-align: center;
-                                                    width: 100%;
-                                                }
-                                            }
-                                            nav ul li {
-                                                display: inline-block;
-                                                margin-left: 35px;
-                                                line-height: 1.5;
-                                            }
-                                            @media only screen and (max-width: 766px) {
-                                                nav ul li {
-                                                    width: 100%;
-                                                    padding: 7px 0;
-                                                    margin: 0;
-                                                }
-                                            }
-                                            nav ul a {
-                                                color: ghostwhite;
-                                                text-transform: uppercase;
-                                                font-size: 1.em;
-                                            }
-                                            .mobile-toggle {
-                                                display: none;
-                                                cursor: pointer;
-                                                font-size: 20px;
-                                                position: absolute;
-                                                right: 22px;
-                                                top: 0;
-                                                width: 30px;
-                                                -webkit-transition: all 200ms ease-in;
-                                                -moz-transition: all 200ms ease-in;
-                                                transition: all 200ms ease-in;
-                                            }
-                                            @media only screen and (max-width: 766px) {
-                                                .mobile-toggle {
-                                                    display: block;
-                                                }
-                                            }
-                                            .mobile-toggle span {
-                                                width: 30px;
-                                                height: 4px;
-                                                margin-bottom: 6px;
-                                                border-radius: 1000px;
-                                                background: #8f8f8f;
-                                                display: block;
-                                            }
-                                            .row {
-                                                width: 100%;
-                                                max-width: 940px;
-                                                margin: 0 auto;
-                                                position: relative;
-                                                padding: 0 2%;
-                                            }
-                                            * {
-                                                box-sizing: border-box;
-                                            }
-                                            body {
-                                                color: ghostwhite;
-                                                background: black;
-                                                font-family: "Cardo", serif;
-                                                font-weight: 300;
-                                                height: 100%;
-                                                -webkit-font-smoothing: antialiased;
-                                            }
-                                            a {
-                                                text-decoration: none;
-                                            }
-                                            h1 {
-                                                font-size: 30px;
-                                                line-height: 1.8;
-                                                text-transform: uppercase;
-                                                font-family: "Montserrat", sans-serif;
-                                            }
-                                            p {
-                                                margin-bottom: 20px;
-                                                font-size: 17px;
-                                                line-height: 2;
-                                            }
-                                            .content {
-                                                padding: 50px 2% 250px;
-                                            }
-                                            .hero {
-                                                position: relative;
-                                                background: url(../images/msc.jpg) no-repeat center center fixed;
-                                                -webkit-background-size: cover;
-                                                -moz-background-size: cover;
-                                                background-size: cover;
-                                                text-align: center;
-                                                color: #fff;
-                                                padding-top: 110px;
-                                                min-height: 500px;
-                                                letter-spacing: 2px;
-                                                font-family: "Montserrat", sans-serif;
-                                            }
-                                            .hero h1 {
-                                                outline-color: aqua;
-                                                font-size: 3em;
-                                                line-height: 1.3;
-                                            }
-                                            .hero h1 span {
-                                                font-size: 0.7em;
-                                                color: #e8f380;
-                                                border-bottom: 2px solid #e8f380;
-                                                padding-bottom: 12px;
-                                                line-height: 3;
-                                            }
-                                            .mouse {
-                                                display: block;
-                                                margin: 0 auto;
-                                                width: 2em;
-                                                height: 3em;
-                                                border-radius: 13px;
-                                                border: 2px solid #e8f380;
-                                                position: absolute;
-                                                bottom: 40px;
-                                                position: absolute;
-                                                left: 50%;
-                                                margin-left: -26px;
-                                            }
-                                            .mouse span {
-                                                display: block;
-                                                margin: 6px auto;
-                                                width: 2px;
-                                                height: 2px;
-                                                border-radius: 4px;
-                                                background: #e8f380;
-                                                border: 1px solid transparent;
-                                                -webkit-animation-duration: 1s;
-                                                animation-duration: 1s;
-                                                -webkit-animation-fill-mode: both;
-                                                animation-fill-mode: both;
-                                                -webkit-animation-iteration-count: infinite;
-                                                animation-iteration-count: infinite;
-                                                -webkit-animation-name: scroll;
-                                                animation-name: scroll;
-                                            }
-                                            @-webkit-keyframes scroll {
-                                                0% {
-                                                    opacity: 1;
-                                                    -webkit-transform: translateY(0);
-                                                    transform: translateY(0);
-                                                }
-                                                100% {
-                                                    opacity: 0;
-                                                    -webkit-transform: translateY(20px);
-                                                    transform: translateY(20px);
-                                                }
-                                            }
-                                            @keyframes scroll {
-                                                0% {
-                                                    opacity: 1;
-                                                    -webkit-transform: translateY(0);
-                                                    -ms-transform: translateY(0);
-                                                    transform: translateY(0);
-                                                }
-                                                100% {
-                                                    opacity: 0;
-                                                    -webkit-transform: translateY(20px);
-                                                    -ms-transform: translateY(20px);
-                                                    transform: translateY(20px);
-                                                }
-                                            }
-                                            /*====================nav end=======================*/
-                                            
-                                            #section2 {
-                                                text-align: center;
-                                                color: floralwhite;
-                                            }
-                                            #portfolio img {
-                                                max-width: 100%;
-                                                height: 20em;
-                                                width: 200em;
-                                            }
-                                            #img:hover {
-                                                background-color: floralwhite;
-                                            }
-                                            #portfolio {
-                                                margin: 0 auto;
-                                            }
-                                            #section4 {
-                                                text-align: center;
-                                                color: floralwhite;
-                                            }
-                                            /*........................Contact section....................*/
-                                            
-                                            import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
-                                            html {
-                                                background: url(http://thekitemap.com/images/feedback-img.jpg) no-repeat;
-                                                background-size: cover;
-                                            }
-                                            #feedback-page {
-                                                text-align: center;
-                                            }
-                                            #form-main {
-                                                width: 100%;
-                                                padding-top: 0px;
-                                            }
-                                            #form-div {
-                                                background-color: rgba(72, 72, 72, 0.4);
-                                                padding-left: 35px;
-                                                padding-right: 35px;
-                                                padding-top: 35px;
-                                                padding-bottom: 50px;
-                                                /* width: 450px;*/
-                                                float: left;
-                                                display: inline-block;
-                                                left: 25%;
-                                                position: absolute;
-                                                margin-top: 0em;
-                                                margin-left: -13em;
-                                                -moz-border-radius: 7px;
-                                                -webkit-border-radius: 7px;
-                                            }
-                                            .feedback-input {
-                                                color: #3c3c3c;
-                                                font-family: Helvetica, Arial, sans-serif;
-                                                font-weight: 500;
-                                                font-size: 18px;
-                                                border-radius: 0;
-                                                line-height: 22px;
-                                                background-color: #fbfbfb;
-                                                padding: 13px 13px 13px 54px;
-                                                margin-bottom: 10px;
-                                                width: 100%;
-                                                -webkit-box-sizing: border-box;
-                                                -moz-box-sizing: border-box;
-                                                -ms-box-sizing: border-box;
-                                                box-sizing: border-box;
-                                                border: 3px solid rgba(0, 0, 0, 0);
-                                            }
-                                            .feedback-input:focus {
-                                                background: #fff;
-                                                box-shadow: 0;
-                                                border: 3px solid #3498db;
-                                                color: #3498db;
-                                                outline: none;
-                                                padding: 13px 13px 13px 54px;
-                                            }
-                                            .focused {
-                                                color: #30aed6;
-                                                border: #30aed6 solid 3px;
-                                            }
-                                            /* Icons ---------------------------------- */
-                                            
-                                            #name {
-                                                background-image: url(http://rexkirby.com/kirbyandson/images/name.svg);
-                                                background-size: 30px 30px;
-                                                background-position: 11px 8px;
-                                                background-repeat: no-repeat;
-                                            }
-                                            #name:focus {
-                                                background-image: url(http://rexkirby.com/kirbyandson/images/name.svg);
-                                                background-size: 30px 30px;
-                                                background-position: 8px 5px;
-                                                background-position: 11px 8px;
-                                                background-repeat: no-repeat;
-                                            }
-                                            #email {
-                                                background-image: url(http://rexkirby.com/kirbyandson/images/email.svg);
-                                                background-size: 30px 30px;
-                                                background-position: 11px 8px;
-                                                background-repeat: no-repeat;
-                                            }
-                                            #email:focus {
-                                                background-image: url(http://rexkirby.com/kirbyandson/images/email.svg);
-                                                background-size: 30px 30px;
-                                                background-position: 11px 8px;
-                                                background-repeat: no-repeat;
-                                            }
-                                            #comment {
-                                                background-image: url(http://rexkirby.com/kirbyandson/images/comment.svg);
-                                                background-size: 30px 30px;
-                                                background-position: 11px 8px;
-                                                background-repeat: no-repeat;
-                                            }
-                                            textarea {
-                                                width: 100%;
-                                                height: 150px;
-                                                line-height: 150%;
-                                                resize: vertical;
-                                            }
-                                            input:hover,
-                                            textarea:hover,
-                                            input:focus,
-                                            textarea:focus {
-                                                background-color: white;
-                                            }
-                                            #button-blue {
-                                                font-family: 'Montserrat', Arial, Helvetica, sans-serif;
-                                                width: 100%;
-                                                border: #fbfbfb solid 4px;
-                                                cursor: pointer;
-                                                background-color: black;
-                                                color: white;
-                                                font-size: 24px;
-                                                padding-top: 22px;
-                                                padding-bottom: 22px;
-                                                -webkit-transition: all 0.3s;
-                                                -moz-transition: all 0.3s;
-                                                transition: all 0.3s;
-                                                margin-top: -4px;
-                                                font-weight: 700;
-                                            }
-                                            #button-blue:hover {
-                                                background-color: rgba(0, 0, 0, 0);
-                                                color: #0493bd;
-                                            }
-                                            .submit:hover {
-                                                color: #3498db;
-                                            }
-                                            .ease {
-                                                width: 0px;
-                                                height: 74px;
-                                                background-color: #fbfbfb;
-                                                -webkit-transition: .3s ease;
-                                                -moz-transition: .3s ease;
-                                                -o-transition: .3s ease;
-                                                -ms-transition: .3s ease;
-                                                transition: .3s ease;
-                                            }
-                                            .submit:hover .ease {
-                                                width: 100%;
-                                                background-color: white;
-                                            }
-                                            @media only screen and (max-width: 580px) {
-                                                #form-div {
-                                                    left: 3%;
-                                                    margin-right: 3%;
-                                                    width: 88%;
-                                                    margin-left: 0;
-                                                    padding-left: 3%;
-                                                    padding-right: 3%;
-                                                }
-                                                section .contact {
-                                                    height: 100%;
-                                                }
-                                                /*........................Contact section End................*/
-                                                /*........................social media................*/
-                                                @charset "UTF-8";
-                                                .hero {
-                                                    background: url("http://www.banksy-wallpaper.com/wallapers/800x600/10-i-am-father.jpg") no-repeat center center;
-                                                    background-size: cover;
-                                                    height: 50vh;
-                                                    overflow: hidden;
-                                                }
-                                                .hero h1,
-                                                .hero h2 {
-                                                    color: #fff;
-                                                    text-shadow: 1px 1px 1px #000;
-                                                    padding: 1rem 0 0 1rem;
-                                                    margin: 0;
-                                                }
-                                                .row {
-                                                    max-width: 1200px;
-                                                }
-                                                .footer {
-                                                    background-color: #292c2f;
-                                                    text-align: center;
-                                                    font-size: 1.2rem;
-                                                    padding: 4rem;
-                                                }
-                                                .footer .inline-list a {
-                                                    display: inline-block;
-                                                    width: 4rem;
-                                                    height: 4rem;
-                                                    background-color: #33383b;
-                                                    border-radius: 2px;
-                                                    font-size: 1.5rem;
-                                                    color: #fff;
-                                                    text-align: center;
-                                                    line-height: 35px;
-                                                    margin: 0 3px 0 0;
-                                                }
-                                                .footer .contact {
-                                                    list-style-type: none;
-                                                    margin: 0;
-                                                    text-align: left;
-                                                    color: #fff;
-                                                }
-                                                .footer .contact li {
-                                                    margin-bottom: 2rem;
-                                                }
-                                                .footer .contact li p {
-                                                    padding-left: 5rem;
-                                                }
-                                                .footer .contact i {
-                                                    position: absolute;
-                                                    background-color: #33383b;
-                                                    color: #fff;
-                                                    font-size: 2rem;
-                                                    border-radius: 50%;
-                                                    line-height: 1;
-                                                    margin: 0 0 0 -4rem;
-                                                    vertical-align: middle;
-                                                    padding: .25em .45em;
-                                                }
-                                                .footer .copywrite {
-                                                    color: #8f9296;
-                                                    font-size: 0.875rem;
-                                                    margin: 0 0 1rem 0;
-                                                }
-                                                .footer .about {
-                                                    color: #92999f;
-                                                    font-size: 0.875rem;
-                                                    margin: 0 0 1rem 0;
-                                                }
-                                                .footer .footer-links a {
-                                                    list-style: none;
-                                                    font-weight: normal;
-                                                    color: #fff;
-                                                    padding: 3rem 0 2rem;
-                                                    margin: 0;
-                                                    font-size: 0.875rem;
-                                                }
-                                                .footer .footer-links a::after {
-                                                    content: "•";
-                                                    padding: 0 0.2rem 0 0.4rem;
-                                                }
-                                                .footer .footer-links a:last-child::after {
-                                                    content: "";
-                                                    padding: 0 0.4rem 0 0.8rem;
-                                                }
-                                                @media only screen and (min-width: 40.063em) {
-                                                    .footer p {
-                                                        text-align: left;
-                                                    }
-                                                    .footer .social {
-                                                        height: 4rems;
-                                                        text-align: left;
-                                                        margin: 0;
-                                                    }
-                                                    .footer .contact {
-                                                        text-align: left;
-                                                    }
-                                                    .footer .contact > i {
-                                                        margin-right: 1rem;
-                                                    }
-                                                }
-                                                .logo {
-                                                    color: #fff;
-                                                    font-size: 1.5rem;
-                                                }
-                                                .logo i {
-                                                    margin-right: 0.5rem;
-                                                }
-                                                #social {
-                                                    margin-top: 0 auto;
-                                                    float: right;
-                                                    display: inline-block;
-                                                }
+        html {
+        background-image: url(../images/black.jpg);
+        height: 100%;
+        background-repeat: no-repeat;
+        height: 120%;
+    }
+    #container {}
+    #about {
+        text-align: center;
+    }
+    #about h1 {
+        margin-top: 25%;
+        color: ghostwhite;
+        font-size: 2.5em;
+}
+    #about p {
+        margin-top: 1em;
+        font-size: 2em;
+    }
+    /*=========================loader====================*/
+    /*.............loader................*/
+
+    #loader-wrapper {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 1000;
+    }
+    #loader {
+        display: block;
+        position: relative;
+        left: 50%;
+        top: 50%;
+        width: 150px;
+        height: 150px;
+        margin: -75px 0 0 -75px;
+        border: 3px solid #3498db;
+        z-index: 1500;
+    }
+    #loader:before {
+        content: "";
+        position: absolute;
+        top: 5px;
+        left: 5px;
+        right: 5px;
+        bottom: 5px;
+        border: 3px solid #e74c3c;
+    }
+    #loader:after {
+        content: "";
+        position: absolute;
+        top: 15px;
+        left: 15px;
+        right: 15px;
+        bottom: 15px;
+        border: 3px solid #f9c922;
+    }
+    /* change border to transparent and set only border-top to a solid color */
+
+    #loader {
+        border: 3px solid transparent;
+        border-top-color: #3498db;
+    }
+    #loader:before {
+        border: 3px solid transparent;
+        border-top-color: #e74c3c;
+    }
+    #loader:after {
+        border: 3px solid transparent;
+        border-top-color: #f9c922;
+    }
+    #loader {
+        border-radius: 50%;
+    }
+    #loader:before {
+        border-radius: 50%;
+    }
+    #loader:after {
+        border-radius: 50%;
+    }
+    /* copy and paste the animation inside all 3 elements */
+    /* #loader, #loader:before, #loader:after */
+
+    -webkit-animation: spin 1.5s linear infinite;
+    animation: spin 1.5s linear infinite;
+    /* include this only once */
+
+    @-webkit-keyframes spin {
+        0% {
+            -webkit-transform: rotate(0deg);
+            /* Chrome, Opera 15+, Safari 3.1+ */
+            -ms-transform: rotate(0deg);
+            /* IE 9 */
+            transform: rotate(0deg);
+            /* Firefox 16+, IE 10+, Opera */
+        }
+        100% {
+            -webkit-transform: rotate(360deg);
+            /* Chrome, Opera 15+, Safari 3.1+ */
+            -ms-transform: rotate(360deg);
+            /* IE 9 */
+            transform: rotate(360deg);
+            /* Firefox 16+, IE 10+, Opera */
+        }
+    }
+    @keyframes spin {
+        0% {
+            -webkit-transform: rotate(0deg);
+            /* Chrome, Opera 15+, Safari 3.1+ */
+            -ms-transform: rotate(0deg);
+            /* IE 9 */
+            transform: rotate(0deg);
+            /* Firefox 16+, IE 10+, Opera */
+        }
+        100% {
+            -webkit-transform: rotate(360deg);
+            /* Chrome, Opera 15+, Safari 3.1+ */
+            -ms-transform: rotate(360deg);
+            /* IE 9 */
+            transform: rotate(360deg);
+            /* Firefox 16+, IE 10+, Opera */
+        }
+    }
+    #loader {
+        -webkit-animation: spin 2s linear infinite;
+        animation: spin 2s linear infinite;
+    }
+    #loader:before {
+        -webkit-animation: spin 3s linear infinite;
+        animation: spin 3s linear infinite;
+    }
+    #loader-wrapper .loader-section {
+        position: fixed;
+        top: 0;
+        width: 51%;
+        height: 100%;
+        background: black;
+        z-index: 1000;
+    }
+    #loader-wrapper .loader-section.section-left {
+        left: 0;
+    }
+    #loader-wrapper .loader-section.section-right {
+        right: 0;
+    }
+    #loader {
+        z-index: 1001;
+        /* anything higher than z-index: 1000 of .loader-section */
+    }
+    #content h2 {
+        margin-top: 10%;
+        color: cyan;
+        font-family: Ritzyremixnf;
+    }
+    #content p {
+        color: #EEEEEE;
+    }
+    #content {
+        margin: 0 auto;
+        padding-bottom: 50px;
+        width: 80%;
+        max-width: 978px;
+    }
+    .loaded #loader-wrapper .loader-section.section-left {
+        -webkit-transform: translateX(-100%);
+        /* Chrome, Opera 15+, Safari 3.1+ */
+        -ms-transform: translateX(-100%);
+        /* IE 9 */
+        transform: translateX(-100%);
+        /* Firefox 16+, IE 10+, Opera */
+    }
+    .loaded #loader-wrapper .loader-section.section-right {
+        -webkit-transform: translateX(100%);
+        /* Chrome, Opera 15+, Safari 3.1+ */
+        -ms-transform: translateX(100%);
+        /* IE 9 */
+        transform: translateX(100%);
+        /* Firefox 16+, IE 10+, Opera */
+    }
+    .loaded #loader {
+        opacity: 0;
+    }
+    .loaded #loader-wrapper {
+        visibility: hidden;
+    }
+    .loaded #loader {
+        opacity: 0;
+        -webkit-transition: all 0.3s ease-out;
+        transition: all 0.3s ease-out;
+    }
+    .loaded #loader-wrapper .loader-section.section-right,
+    .loaded #loader-wrapper .loader-section.section-left {
+        -webkit-transition: all 0.3s 0.3s ease-out;
+        transition: all 0.3s 0.3s ease-out;
+    }
+    .loaded #loader-wrapper {
+        -webkit-transform: translateY(-100%);
+        -ms-transform: translateY(-100%);
+        transform: translateY(-100%);
+        -webkit-transition: all 0.3s 0.6s ease-out;
+        transition: all 0.3s 0.6s ease-out;
+    }
+    .loaded #loader-wrapper .loader-section.section-right,
+    .loaded #loader-wrapper .loader-section.section-left {
+        -webkit-transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1.000);
+        transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1.000);
+    }
+    .loaded #loader-wrapper {
+        -webkit-transform: translateY(-100%);
+        -ms-transform: translateY(-100%);
+        transform: translateY(-100%);
+        -webkit-transition: all 0.3s 1s ease-out;
+        transition: all 0.3s 1s ease-out;
+    }
+    .no-js #loader-wrapper {
+        display: none;
+    }
+    .no-js h1 {
+        color: #222222;
+    }
+    /*=========================end loader====================*/
+    /*=========================navigation====================*/
+
+    #nav {
+        border-bottom-left-radius: 2em;
+        border-top-left-radius: 2em;
+    }
+    .main_h {
+        position: fixed;
+        top: 0px;
+        max-height: 12%;
+        z-index: 999;
+        width: 100%;
+        padding-top: 1.5%;
+        background: none;
+        overflow: hidden;
+        -webkit-transition: all 0.2s;
+        transition: all 0.3s;
+        opacity: 0;
+        top: -100px;
+        padding-bottom: 6px;
+        font-family: "Montserrat", sans-serif;
+    }
+    @media only screen and (max-width: 766px) {
+        .main_h {
+            padding-top: 25px;
+        }
+    }
+    .open-nav {
+        max-height: 400px !important;
+    }
+    .open-nav .mobile-toggle {
+        transform: rotate(-90deg);
+        -webkit-transform: rotate(-90deg);
+    }
+    .sticky {
+        background-color: black;
+        opacity: 0.85;
+        top: 0px;
+        border-bottom: 0.14em solid gainsboro;
+    }
+    .logo {
+        width: 5%;
+        font-size: 1.5em;
+        color: ghostwhite;
+        text-transform: uppercase;
+        float: left;
+        display: block;
+        margin-top: 0;
+        margin-left: 1em;
+        line-height: 1;
+        margin-bottom: 10%;
+    }
+    @media only screen and (max-width: 766px) {
+        .logo {
+            float: none;
+        }
+    }
+    nav {
+        float: right;
+        width: 60%;
+    }
+    @media only screen and (max-width: 766px) {
+        nav {
+            width: 100%;
+        }
+    }
+    nav ul {
+        list-style: none;
+        overflow: hidden;
+        text-align: right;
+        float: right;
+    }
+    nav li:hover {
+        transition: 0.6s ease;
+        border-bottom: 1em solid #e8f380;
+    }
+    nav a:hover {
+        color: #e8f380;
+    }
+    @media only screen and (max-width: 766px) {
+        nav ul {
+            padding-top: 10px;
+            margin-bottom: 22px;
+            float: left;
+            text-align: center;
+            width: 100%;
+        }
+    }
+    nav ul li {
+        display: inline-block;
+        margin-left: 35px;
+        line-height: 1.5;
+    }
+    @media only screen and (max-width: 766px) {
+        nav ul li {
+            width: 100%;
+            padding: 7px 0;
+            margin: 0;
+        }
+    }
+    nav ul a {
+        color: ghostwhite;
+        text-transform: uppercase;
+        font-size: 1.em;
+    }
+    .mobile-toggle {
+        display: none;
+        cursor: pointer;
+        font-size: 20px;
+        position: absolute;
+        right: 22px;
+        top: 0;
+        width: 30px;
+        -webkit-transition: all 200ms ease-in;
+        -moz-transition: all 200ms ease-in;
+        transition: all 200ms ease-in;
+    }
+    @media only screen and (max-width: 766px) {
+        .mobile-toggle {
+            display: block;
+        }
+    }
+    .mobile-toggle span {
+        width: 30px;
+        height: 4px;
+        margin-bottom: 6px;
+        border-radius: 1000px;
+        background: #8f8f8f;
+        display: block;
+    }
+    .row {
+        width: 100%;
+        max-width: 940px;
+        margin: 0 auto;
+        position: relative;
+        padding: 0 2%;
+    }
+    * {
+        box-sizing: border-box;
+    }
+    body {
+        color: ghostwhite;
+        background: black;
+        font-family: "Cardo", serif;
+        font-weight: 300;
+        height: 100%;
+        -webkit-font-smoothing: antialiased;
+    }
+    a {
+        text-decoration: none;
+    }
+    h1 {
+        font-size: 30px;
+        line-height: 1.8;
+        text-transform: uppercase;
+        font-family: "Montserrat", sans-serif;
+    }
+    p {
+        margin-bottom: 20px;
+        font-size: 17px;
+        line-height: 2;
+    }
+    .content {
+        padding: 50px 2% 250px;
+    }
+    .hero {
+        position: relative;
+        background: url(../images/msc.jpg) no-repeat center center fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        background-size: cover;
+        text-align: center;
+        color: #fff;
+        padding-top: 110px;
+        min-height: 500px;
+        letter-spacing: 2px;
+        font-family: "Montserrat", sans-serif;
+    }
+    .hero h1 {
+        outline-color: aqua;
+        font-size: 3em;
+        line-height: 1.3;
+    }
+    .hero h1 span {
+        font-size: 0.7em;
+        color: #e8f380;
+        border-bottom: 2px solid #e8f380;
+        padding-bottom: 12px;
+        line-height: 3;
+    }
+    .mouse {
+        display: block;
+        margin: 0 auto;
+        width: 2em;
+        height: 3em;
+        border-radius: 13px;
+        border: 2px solid #e8f380;
+        position: absolute;
+        bottom: 40px;
+        position: absolute;
+        left: 50%;
+        margin-left: -26px;
+    }
+    .mouse span {
+        display: block;
+        margin: 6px auto;
+        width: 2px;
+        height: 2px;
+        border-radius: 4px;
+        background: #e8f380;
+        border: 1px solid transparent;
+        -webkit-animation-duration: 1s;
+        animation-duration: 1s;
+        -webkit-animation-fill-mode: both;
+        animation-fill-mode: both;
+        -webkit-animation-iteration-count: infinite;
+        animation-iteration-count: infinite;
+        -webkit-animation-name: scroll;
+        animation-name: scroll;
+    }
+    @-webkit-keyframes scroll {
+        0% {
+            opacity: 1;
+            -webkit-transform: translateY(0);
+            transform: translateY(0);
+        }
+        100% {
+            opacity: 0;
+            -webkit-transform: translateY(20px);
+            transform: translateY(20px);
+        }
+    }
+    @keyframes scroll {
+        0% {
+            opacity: 1;
+            -webkit-transform: translateY(0);
+            -ms-transform: translateY(0);
+            transform: translateY(0);
+        }
+        100% {
+            opacity: 0;
+            -webkit-transform: translateY(20px);
+            -ms-transform: translateY(20px);
+            transform: translateY(20px);
+        }
+    }
+    /*====================nav end=======================*/
+
+    #section2 {
+        text-align: center;
+        color: floralwhite;
+    }
+    #portfolio img {
+        max-width: 100%;
+        height: 20em;
+        width: 200em;
+    }
+    #img:hover {
+        background-color: floralwhite;
+    }
+    #portfolio {
+        margin: 0 auto;
+    }
+    #section4 {
+        text-align: center;
+        color: floralwhite;
+    }
+    /*........................Contact section....................*/
+
+    import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
+    html {
+        background: url(http://thekitemap.com/images/feedback-img.jpg) no-repeat;
+        background-size: cover;
+    }
+    #feedback-page {
+        text-align: center;
+    }
+    #form-main {
+        width: 100%;
+        padding-top: 0px;
+    }
+    #form-div {
+        background-color: rgba(72, 72, 72, 0.4);
+        padding-left: 35px;
+        padding-right: 35px;
+        padding-top: 35px;
+        padding-bottom: 50px;
+        /* width: 450px;*/
+        float: left;
+        display: inline-block;
+        left: 25%;
+        position: absolute;
+        margin-top: 0em;
+        margin-left: -13em;
+        -moz-border-radius: 7px;
+        -webkit-border-radius: 7px;
+    }
+    .feedback-input {
+        color: #3c3c3c;
+        font-family: Helvetica, Arial, sans-serif;
+        font-weight: 500;
+        font-size: 18px;
+        border-radius: 0;
+        line-height: 22px;
+        background-color: #fbfbfb;
+        padding: 13px 13px 13px 54px;
+        margin-bottom: 10px;
+        width: 100%;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        -ms-box-sizing: border-box;
+        box-sizing: border-box;
+        border: 3px solid rgba(0, 0, 0, 0);
+    }
+    .feedback-input:focus {
+        background: #fff;
+        box-shadow: 0;
+        border: 3px solid #3498db;
+        color: #3498db;
+        outline: none;
+        padding: 13px 13px 13px 54px;
+    }
+    .focused {
+        color: #30aed6;
+        border: #30aed6 solid 3px;
+    }
+    /* Icons ---------------------------------- */
+
+    #name {
+        background-image: url(http://rexkirby.com/kirbyandson/images/name.svg);
+        background-size: 30px 30px;
+        background-position: 11px 8px;
+        background-repeat: no-repeat;
+    }
+    #name:focus {
+        background-image: url(http://rexkirby.com/kirbyandson/images/name.svg);
+        background-size: 30px 30px;
+        background-position: 8px 5px;
+        background-position: 11px 8px;
+        background-repeat: no-repeat;
+    }
+    #email {
+        background-image: url(http://rexkirby.com/kirbyandson/images/email.svg);
+        background-size: 30px 30px;
+        background-position: 11px 8px;
+        background-repeat: no-repeat;
+    }
+    #email:focus {
+        background-image: url(http://rexkirby.com/kirbyandson/images/email.svg);
+        background-size: 30px 30px;
+        background-position: 11px 8px;
+        background-repeat: no-repeat;
+    }
+    #comment {
+        background-image: url(http://rexkirby.com/kirbyandson/images/comment.svg);
+        background-size: 30px 30px;
+        background-position: 11px 8px;
+        background-repeat: no-repeat;
+    }
+    textarea {
+        width: 100%;
+        height: 150px;
+        line-height: 150%;
+        resize: vertical;
+    }
+    input:hover,
+    textarea:hover,
+    input:focus,
+    textarea:focus {
+        background-color: white;
+    }
+    #button-blue {
+        font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+        width: 100%;
+        border: #fbfbfb solid 4px;
+        cursor: pointer;
+        background-color: black;
+        color: white;
+        font-size: 24px;
+        padding-top: 22px;
+        padding-bottom: 22px;
+        -webkit-transition: all 0.3s;
+        -moz-transition: all 0.3s;
+        transition: all 0.3s;
+        margin-top: -4px;
+        font-weight: 700;
+    }
+    #button-blue:hover {
+        background-color: rgba(0, 0, 0, 0);
+        color: #0493bd;
+    }
+    .submit:hover {
+        color: #3498db;
+    }
+    .ease {
+        width: 0px;
+        height: 74px;
+        background-color: #fbfbfb;
+        -webkit-transition: .3s ease;
+        -moz-transition: .3s ease;
+        -o-transition: .3s ease;
+        -ms-transition: .3s ease;
+        transition: .3s ease;
+    }
+    .submit:hover .ease {
+        width: 100%;
+        background-color: white;
+    }
+    @media only screen and (max-width: 580px) {
+        #form-div {
+            left: 3%;
+            margin-right: 3%;
+            width: 88%;
+            margin-left: 0;
+            padding-left: 3%;
+            padding-right: 3%;
+        }
+        section .contact {
+            height: 100%;
+        }
+        /*........................Contact section End................*/
+        /*........................social media................*/
+        @charset "UTF-8";
+        .hero {
+            background: url("http://www.banksy-wallpaper.com/wallapers/800x600/10-i-am-father.jpg") no-repeat center center;
+            background-size: cover;
+            height: 50vh;
+            overflow: hidden;
+        }
+        .hero h1,
+        .hero h2 {
+            color: #fff;
+            text-shadow: 1px 1px 1px #000;
+            padding: 1rem 0 0 1rem;
+            margin: 0;
+        }
+        .row {
+            max-width: 1200px;
+        }
+        .footer {
+            background-color: #292c2f;
+            text-align: center;
+            font-size: 1.2rem;
+            padding: 4rem;
+        }
+        .footer .inline-list a {
+            display: inline-block;
+            width: 4rem;
+            height: 4rem;
+            background-color: #33383b;
+            border-radius: 2px;
+            font-size: 1.5rem;
+            color: #fff;
+            text-align: center;
+            line-height: 35px;
+            margin: 0 3px 0 0;
+        }
+        .footer .contact {
+            list-style-type: none;
+            margin: 0;
+            text-align: left;
+            color: #fff;
+        }
+        .footer .contact li {
+            margin-bottom: 2rem;
+        }
+        .footer .contact li p {
+            padding-left: 5rem;
+        }
+        .footer .contact i {
+            position: absolute;
+            background-color: #33383b;
+            color: #fff;
+            font-size: 2rem;
+            border-radius: 50%;
+            line-height: 1;
+            margin: 0 0 0 -4rem;
+            vertical-align: middle;
+            padding: .25em .45em;
+        }
+        .footer .copywrite {
+            color: #8f9296;
+            font-size: 0.875rem;
+            margin: 0 0 1rem 0;
+        }
+        .footer .about {
+            color: #92999f;
+            font-size: 0.875rem;
+            margin: 0 0 1rem 0;
+        }
+        .footer .footer-links a {
+            list-style: none;
+            font-weight: normal;
+            color: #fff;
+            padding: 3rem 0 2rem;
+            margin: 0;
+            font-size: 0.875rem;
+        }
+        .footer .footer-links a::after {
+            content: "•";
+            padding: 0 0.2rem 0 0.4rem;
+        }
+        .footer .footer-links a:last-child::after {
+            content: "";
+            padding: 0 0.4rem 0 0.8rem;
+        }
+        @media only screen and (min-width: 40.063em) {
+            .footer p {
+                text-align: left;
+            }
+            .footer .social {
+                height: 4rems;
+                text-align: left;
+                margin: 0;
+            }
+            .footer .contact {
+                text-align: left;
+            }
+            .footer .contact > i {
+                margin-right: 1rem;
+            }
+        }
+        .logo {
+            color: #fff;
+            font-size: 1.5rem;
+        }
+        .logo i {
+            margin-right: 0.5rem;
+        }
+        #social {
+            margin-top: 0 auto;
+            float: right;
+            display: inline-block;
+        }
