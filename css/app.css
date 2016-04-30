@@ -4,7 +4,10 @@
         background-repeat: no-repeat;
         height: 120%;
     }
-    #container {}
+    #container {
+        width: 100%;
+        padding: 2%;
+}
     #about {
         text-align: center;
     }
@@ -23,6 +26,10 @@
     
     background-image: url(../images/cofee.jpg);
     width: 100%;
+    
+}
+.language h1{
+    text-align: center;
 }
     /*=========================loader====================*/
     /*.............loader................*/
