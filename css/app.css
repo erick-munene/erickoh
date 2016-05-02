@@ -25,7 +25,10 @@
 #about2{
     
     background-image: url(../images/cofee.jpg);
-    width: 100%;
+    width: 120%;
+    margin-left: 2%;
+    margin-right: 2%;
+    padding: 1em;
     
 }
 .language h1{
