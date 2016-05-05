@@ -493,6 +493,12 @@
         height: 20em;
         width: 200em;
     }
+/*
+#img{
+    font-size: 20em;
+    
+}
+*/
     #img:hover {
         background-color: floralwhite;
     }
