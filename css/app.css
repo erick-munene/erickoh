@@ -17,16 +17,14 @@
         font-size: 2.5em;
 }
     #about p {
-        margin-top: 1em;
+/*        margin-top: 1em;*/
         font-size: 2em;
     }
 
 
-#about2{
-    
-    background-image: url(../images/cofee.jpg);
-/*    max-width: */
-    width: 100%;
+.about2{
+  color: black;  
+
     
 }
 .language h1{
@@ -173,10 +171,9 @@
         color: #EEEEEE;
     }
     #content {
-        margin: 0 auto;
-        padding-bottom: 50px;
-        width: 80%;
-        max-width: 978px;
+  height: 100%;
+        width: 100%;
+
     }
     .loaded #loader-wrapper .loader-section.section-left {
         -webkit-transform: translateX(-100%);
@@ -500,7 +497,7 @@
 }
 #img p{
     font-size: 1lem;
-    color: #e8f380;
+    color: black;
     
     
 }
@@ -511,8 +508,8 @@
         color: #e8f380;
     }
     #portfolio {
-        margin: 0 auto;
-    }
+        border-top: 0%;
+}
     #section4 {
         text-align: center;
         color: floralwhite;
