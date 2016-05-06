@@ -493,14 +493,22 @@
         height: 20em;
         width: 200em;
     }
-/*
-#img{
-    font-size: 20em;
+#img {
+    font-size: 3em;
+    
     
 }
-*/
-    #img:hover {
-        background-color: floralwhite;
+#img p{
+    font-size: 1lem;
+    color: #e8f380;
+    
+    
+}
+#img i{
+    color: black;
+}
+    #img i:hover {
+        color: #e8f380;
     }
     #portfolio {
         margin: 0 auto;
