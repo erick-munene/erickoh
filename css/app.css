@@ -4,6 +4,12 @@
         background-repeat: no-repeat;
         height: 120%;
     }
+/*
+.row {
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto; }
+*/
     #container {
         width: 100%;
         padding: 2%;
@@ -164,14 +170,14 @@
     }
     #content h2 {
         margin-top: 10%;
-        color: cyan;
+/*        color: cyan;*/
         font-family: Ritzyremixnf;
     }
     #content p {
         color: #EEEEEE;
     }
     #content {
-  height: 100%;
+  
         width: 100%;
 
     }
@@ -483,7 +489,7 @@
 
     #section2 {
         text-align: center;
-        color: floralwhite;
+        color: black;
     }
     #portfolio img {
         max-width: 100%;
@@ -506,6 +512,7 @@
 }
     #img i:hover {
         color: #e8f380;
+        font-size: 1.1em;
     }
     #portfolio {
         border-top: 0%;
@@ -777,7 +784,7 @@
             margin-right: 0.5rem;
         }
         #social {
-            margin-top: 0 auto;
-            float: right;
+          margin-top: -10%;;
+           
             display: inline-block;
         }
