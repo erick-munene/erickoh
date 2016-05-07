@@ -4,6 +4,7 @@
 	height:400px;
 	position:relative;
 	margin:30px auto;
+    
 }
 .tj_nav{
 	position:absolute;
@@ -16,7 +17,7 @@
 .tj_nav span{
 	width:39px;
 	height:25px;
-	background:transparent url(../images/prev.png) no-repeat top left;
+	background-image: url(/images/cofee.jpg)no-repeat top left;
 	position:absolute;
 	top:0px;
 	left:0px;
