@@ -909,6 +909,12 @@
         }
         section .contact {
             height: 100%;
+            
+            
+        }
+        #contactpage{
+            background-image: url(../images/music.jpg);
+            width: 100%;
         }
         /*........................Contact section End................*/
         /*........................social media................*/
