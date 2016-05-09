@@ -489,14 +489,9 @@
 
     #section2 {
         text-align: center;
-        color: black;
+        color: cyan;
     }
-    #portfolio img {
-        max-width: 100%;
-        height: 20em;
-        width: 200em;
-    }
-/*
+
 #img {
     font-size: 3em;
     
@@ -515,22 +510,22 @@
         color: #e8f380;
         font-size: 1.1em;
     }
-    #portfolio {
-        border-top: 0%;
-}
+
     #section4 {
         text-align: center;
         color: floralwhite;
         
         
         }
-*/
 
 
 
 /*------------
 
 ----portfolio slider-------------------*/
+#port {
+    background-image: url(/images/cofee.jpg);
+}
 .grid {
     margin: 40px auto 120px;
     max-width: 1000px;
@@ -558,7 +553,7 @@
 	position: relative;
 	display: block;
 	width: 100%;
-    height: 60%;
+    height: 20em;
 	opacity: 0.7;
 	transition: opacity 0.3s;
 }
@@ -596,6 +591,7 @@
 
 .grid figure button {
 	position: absolute;
+    color: aqua;
 	padding: 4px 20px;
 	border: none;
 	text-transform: uppercase;
@@ -638,6 +634,7 @@
 
 
 
+/*
 .demo-1 .grid figure button,
 .demo-3 .grid figure button {
 	top: 50%;
@@ -648,13 +645,17 @@
 	opacity: 0;
 	transform: translateY(-50%) translateX(-50%) scale(0.25);
 }
+*/
 
+/*
 .demo-1 .grid a:hover figure button,
 .demo-3 .grid a:hover figure button {
 	opacity: 1;
 	transform: translateY(-50%) translateX(-50%) scale(1);
 }
+*/
 
+/*
 .demo-2 body {
 	background: #e74c3c;
 }
@@ -662,6 +663,7 @@
 .demo-2 .grid figcaption h2 {
 	color: #e74c3c;
 }
+*/
 
 .demo-2 .grid figcaption p {
 	transition-delay: 0.05s;
