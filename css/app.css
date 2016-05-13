@@ -527,6 +527,7 @@
 /*------------
 
 ----portfolio slider-------------------*/
+/*
 #port {
     background-image: url(/images/cofee.jpg);
 }
@@ -613,7 +614,7 @@
 
 .grid svg {
 	position: absolute;
-	top: -1px; /* fixes rendering issue in FF */
+	top: -1px;  fixes rendering issue in FF 
 	z-index: 10;
 	width: 100%;
 	height: 100%;
@@ -635,6 +636,7 @@
 .grid a:hover figcaption p {
 	opacity: 0;
 }
+*/
 
 
 
