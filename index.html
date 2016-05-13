@@ -16,6 +16,8 @@
 <link rel="stylesheet" href="css/foundation.css">
 <link rel="stylesheet" href="css/app.css">
 <link rel="stylesheet" href="css/animate%20.css">
+<link rel="stylesheet" type="text/css" href="css/portfoliocss/component.css" />
+<script src="js/portfoliojs/modernizr.custom.js"></script>
 
 
 
@@ -273,6 +275,38 @@ ERICK MUNENE</a>
 <script src="js/vendor/what-input.js"></script>
 <script src="js/vendor/foundation.js"></script>
 <script src="js/app.js"></script>
+     <script src="js/portfoliojs/toucheffects.js"></script>
+    
+    </script>
+    
+    <script>
+			(function() {
+	
+				function init() {
+					var speed = 330,
+						easing = mina.backout;
+
+					[].slice.call ( document.querySelectorAll( '#grid > a' ) ).forEach( function( el ) {
+						var s = Snap( el.querySelector( 'svg' ) ), path = s.select( 'path' ),
+							pathConfig = {
+								from : path.attr( 'd' ),
+								to : el.getAttribute( 'data-path-hover' )
+							};
+
+						el.addEventListener( 'mouseenter', function() {
+							path.animate( { 'path' : pathConfig.to }, speed, easing );
+						} );
+
+						el.addEventListener( 'mouseleave', function() {
+							path.animate( { 'path' : pathConfig.from }, speed, easing );
+						} );
+					} );
+				}
+
+				init();
+
+			})();
+		</script>
 </body>
 
 </html>
