@@ -885,7 +885,7 @@ color: #e74c3c;
 */
         /*........................Contact section End................*/
  /*........................social media................*/
-@import url("//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css");
+
 
 /* div styles for presentation */
 #footer div
@@ -1112,11 +1112,13 @@ max-width: 1200px;
             ;
             display: inline-block;
         }
+/*
         #footer {
             margin-top: 0 auto;
             color: darkcyan;
             background-image: url(/images/menu.jpg);
             background-size: cover;
+*/
         }
         #portfolio img {
             width: 100%;
