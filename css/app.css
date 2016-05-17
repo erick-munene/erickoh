@@ -888,7 +888,7 @@ color: #e74c3c;
 
 
 /* div styles for presentation */
-#footer div
+#sociall div
 {
   margin-bottom: 0.5em;
   margin-left: auto;
@@ -1112,13 +1112,11 @@ max-width: 1200px;
             ;
             display: inline-block;
         }
-/*
         #footer {
             margin-top: 0 auto;
             color: darkcyan;
             background-image: url(/images/menu.jpg);
             background-size: cover;
-*/
         }
         #portfolio img {
             width: 100%;
@@ -1136,6 +1134,7 @@ color: #8495a5;
 font-size: 2.5em;
 font-weight: 300;
 } */
+
 #contact-form {
 max-width: 1208px;
 max-width: 75.5rem;
@@ -1225,5 +1224,5 @@ line-height: 1.5;
 #contact-form aside {
 width: 30.9353%;
 }
-}
+
 /*........................contact form................*/
