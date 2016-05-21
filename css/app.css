@@ -486,9 +486,12 @@ margin-right: auto; }
         color: cyan;
     }
     #img {
+        margin-top: 20%;
         font-size: 3em;
         text-align: center;
-        margin-left: 2em;
+        
+        
+        
     }
     #img p {
         font-size: 1lem;
