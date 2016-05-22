@@ -308,3 +308,13 @@ a
   text-decoration: none;
 }
 /*........................social media................*/
+    
+    
+    
+    
+    #footer {
+            margin-top: 0 auto;
+            color: darkcyan;
+            background-image: url(/images/menu.jpg);
+            background-size: cover;
+        }
