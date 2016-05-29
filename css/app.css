@@ -239,6 +239,8 @@ margin-right: auto; }
     #nav {
         border-bottom-left-radius: 2em;
         border-top-left-radius: 2em;
+       
+        margin-left: 0 auto;
     }
     .main_h {
         position: fixed;
@@ -275,16 +277,15 @@ margin-right: auto; }
         border-bottom: 0.14em solid gainsboro;
     }
     .logo {
-        width: 5%;
-        font-size: 1.5em;
+        width: 25%;
+        font-size: 1.7em;
         color: ghostwhite;
         text-transform: uppercase;
         float: left;
-        display: block;
-        margin-top: 0;
-        margin-left: 1em;
-        line-height: 1;
-        margin-bottom: 10%;
+        display: inline-block;
+        margin: 0 auto;
+/*        line-height: 1;*/
+        
     }
     @media only screen and (max-width: 766px) {
         .logo {
@@ -292,8 +293,9 @@ margin-right: auto; }
         }
     }
     nav {
-        float: right;
-        width: 60%;
+        /*float: right;*/
+        margin: 0 auto;
+        width: 100%;
     }
     @media only screen and (max-width: 766px) {
         nav {
@@ -324,7 +326,7 @@ margin-right: auto; }
     }
     nav ul li {
         display: inline-block;
-        margin-left: 35px;
+        /*margin-left: 35px;*/
         line-height: 1.5;
     }
     @media only screen and (max-width: 766px) {
@@ -337,8 +339,11 @@ margin-right: auto; }
     nav ul a {
         color: ghostwhite;
         text-transform: uppercase;
-        font-size: 1.em;
+        font-size: 1.1em;
     }
+nav li{
+    margin-right: 3em;
+}
     .mobile-toggle {
         display: none;
         cursor: pointer;
@@ -788,10 +793,13 @@ a
 max-width: 1200px;
 }
 */
+/*
         .logo {
             color: #fff;
             font-size: 1.5rem;
+            
         }
+*/
         .logo i {
             margin-right: 0.5rem;
         }
