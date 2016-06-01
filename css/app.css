@@ -403,6 +403,11 @@ nav li{
     .content {
         padding: 50px 2% 250px;
     }
+
+    #hero{
+background-color: black;
+
+    }
     .hero {
         position: relative;
         background: url(../images/msc.jpg) no-repeat center center fixed;
@@ -818,6 +823,11 @@ max-width: 1200px;
 /*======================portfolio==================*/
 #port{
     background-color: black;
+}
+
+#portfolio img{
+width: 100%;
+
 }
 
 /*======================portfolio==================*/
