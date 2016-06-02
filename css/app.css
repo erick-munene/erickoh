@@ -906,8 +906,9 @@ textarea {
 height: 6em;
 }
 input[type="submit"], button {
-background: #a7cd80;
-color: #333;
+    width: 50%;
+background: black;
+color: #ffffff;
 }
 input[type="submit"]:hover, button:hover {
 background: #91b36f;
@@ -927,9 +928,10 @@ border: 1px solid transparent;
 text-align: right;
 }
 input, textarea, button {
-width: 73.6263%;
+width: 100%;
 line-height: 1.5;
 }
+
 textarea {
 height: 10em;
 }
@@ -953,12 +955,14 @@ margin-left: 17.2661%;
 #contact-form form, #contact-form aside {
 vertical-align: top;
 display: inline-block;
-width: 65.4676%;
+width: 75.4676%;
 text-align: left;
 line-height: 1.5;
 }
 #contact-form aside {
 width: 30.9353%;
 }
+
+
 
 /*........................contact form................*/
