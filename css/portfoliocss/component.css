@@ -10,20 +10,22 @@
 .portfolio li {
 	display: inline-block;
 	width: 440px;
-	margin: 0;
-	padding: 20px;
+	margin: 0 auto;
+	/*padding: 20px*/;
 	text-align: left;
 	position: relative;
 }
 
+
+
 .portfolio figure {
-	margin: 0;
+	margin: 0 auto;
 	position: relative;
 }
 
 .portfolio figure img {
 	max-width: 100%;
-	/*display: block;*/
+	display: inline-block;
 	position: inherit;
 }
 
@@ -32,7 +34,7 @@
 	top: 0;
 	left: 0;
 	padding: 20px;
-	background: #2c3f52;
+	background: black;
 	color: #ed4e6e;
 }
 
@@ -49,7 +51,7 @@
 .portfolio figcaption a {
 	text-align: center;
 	padding: 5px 10px;
-	border-radius: 2px;
+	border-radius: 20px;
 	display: inline-block;
 	background: #ed4e6e;
 	color: #fff;
