@@ -17,15 +17,17 @@ margin-right: auto; }
     }
     #about {
         text-align: center;
+        background-color: grey:;
     }
     #about h1 {
-        margin-top: 25%;
+        margin-top: 12%;
         color: ghostwhite;
         font-size: 2.5em;
     }
     #about p {
         /*        margin-top: 1em;*/
         font-size: 2em;
+        color: black
     }
     .about2 {
         color: black;
@@ -404,10 +406,10 @@ nav li{
         padding: 50px 2% 250px;
     }
 
-    #hero{
+/*    #hero{
 background-color: black;
 
-    }
+    }*/
     .hero {
         position: relative;
         background: url(../images/msc.jpg) no-repeat center center fixed;
@@ -417,7 +419,7 @@ background-color: black;
         text-align: center;
         color: #fff;
         padding-top: 110px;
-        min-height: 100%;
+        min-height: 800px;
         letter-spacing: 2px;
         font-family: "Montserrat", sans-serif;
     }
@@ -437,18 +439,18 @@ background-color: black;
         display: block;
         margin: 0 auto;
         width: 2em;
-        height: 3em;
+        height: 4em;
         border-radius: 13px;
         border: 2px solid #e8f380;
         position: absolute;
-        bottom: 40px;
+        bottom: 30%;
         position: absolute;
         left: 50%;
         margin-left: -26px;
     }
     .mouse span {
         display: block;
-        margin: 6px auto;
+        margin: 8px auto;
         width: 2px;
         height: 2px;
         border-radius: 4px;
