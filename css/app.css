@@ -503,6 +503,7 @@ background-color: black;
 
     #section2 {
          margin-top: 20%;
+        margin-bottom: 6%;
         text-align: center;
         color: cyan;
         width: 100%;
@@ -842,12 +843,16 @@ max-width: 1200px;
 /*======================portfolio==================*/
 #port{
     background-color: black;
+    margin-top: 5%;
+    
+    
 
 }
 
-#portfolio img{
+#port li{
 width: 100%;
-margin-top: 20%;
+    padding: %
+
 
 
 }
