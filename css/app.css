@@ -23,14 +23,14 @@ margin-right: auto; }
         
     }
     #about h1 {
-        margin-top: 12%;
+/*        margin-top: 12%;*/
         color: ghostwhite;
         font-size: 2.5em;
     }
     #about p {
         /*        margin-top: 1em;*/
         font-size: 2em;
-        color: black;
+        color: #e8f380;
     }
     .about2 {
         
