@@ -35,26 +35,29 @@
 	left: 0;
 	padding: 20px;
 	background: black;
-	color: #ed4e6e;
+	color: #e8f380;
 }
 
 .portfolio figcaption h3 {
 	margin: 0;
 	padding: 0;
 	color: #fff;
+    font-size: 1.2em;
 }
 
+/*
 .portfolio figcaption span:before {
 	content: 'by ';
 }
+*/
 
 .portfolio figcaption a {
 	text-align: center;
 	padding: 5px 10px;
 	border-radius: 20px;
 	display: inline-block;
-	background: #ed4e6e;
-	color: #fff;
+	background: #e8f380;
+	color: black;
 }
 
 /* Individual Caption Styles */

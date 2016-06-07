@@ -802,11 +802,17 @@ max-width: 1200px;
         .logo i {
             margin-right: 0.5rem;
         }
-        #social {
+        #skills {
             margin-top: -10%;
-            ;
+            
             display: inline-block;
         }
+
+#skills img:hover{
+    margin-bottom: 0.25em;
+    
+    
+}
         #footer {
             margin-top: 0 auto;
             color: ;
