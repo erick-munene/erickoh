@@ -556,7 +556,10 @@ background-color: black;
 
 
 /* div styles for presentation */
-#sociall div
+#media{
+    margin-top: 2%;
+}
+#sociall
 {
   margin-bottom: 0.5em;
   margin-left: auto;
@@ -597,7 +600,7 @@ background-color: black;
     background-color:#3B5998; 
   }
   100% {
-    background-color: #3B5998;
+/*    background-color: #3B5998;*/
     border: 1px solid #0096ff;
     color: #fff;
   }
@@ -605,7 +608,7 @@ background-color: black;
 
 @-webkit-keyframes twitterAnim {
   50% {
-    background-color: #3B5998;
+/*    background-color: #3B5998;*/
   }
   100% {
     background-color: #3B5998;
@@ -648,7 +651,7 @@ background-color: black;
     background-color: #0096ff;
   }
   100% {
-    background-color: #0096ff;
+/*    background-color: #0096ff;*/
     border: 1px solid #3B5998;
     color: #fff;
   }
@@ -676,7 +679,7 @@ background-color: black;
     background-color: #dd4b39;
   }
   100% {
-    background-color: #dd4b39;
+/*    background-color: #dd4b39;*/
     border: 1px solid #dd4b39;
     color: #fff;
   }
@@ -687,7 +690,7 @@ background-color: black;
     background-color: #dd4b39;
   }
   100% {
-    background-color: #dd4b39;
+/*    background-color: #dd4b39;*/
     border: 1px solid #dd4b39;
     color: #fff;
   }
@@ -715,7 +718,7 @@ background-color: black;
     background-color: #ea4c89;
   }
   100% {
-    background-color: #ea4c89;
+/*    background-color: #ea4c89;*/
     border: 1px solid #ea4c89;
     color: #fff;
   }
@@ -726,7 +729,7 @@ background-color: black;
     background-color: #ea4c89;
   }
   100% {
-    background-color: #ea4c89;
+/*    background-color: #ea4c89;*/
     border: 1px solid #ea4c89;
     color: #fff;
   }
@@ -752,7 +755,7 @@ background-color: black;
     background-color: #720e9e;
   }
   100% {
-    background-color: #720e9e;
+/*    background-color: #720e9e;*/
     border: 1px solid #720e9e;
     color: #fff;
   }
@@ -762,7 +765,7 @@ background-color: black;
     background-color: #720e9e;
   }
   100% {
-    background-color: #720e9e;
+/*    background-color: #720e9e;*/
     border: 1px solid #720e9e;
     color: #fff;
   }
@@ -806,9 +809,10 @@ max-width: 1200px;
         }
         #footer {
             margin-top: 0 auto;
-            color: darkcyan;
-            background-image: url(/images/menu.jpg);
+            color: ;
+            background-image: url(/images/ear.jpg);
             background-size: cover;
+            text-align: center;
         }
 
 /*======================portfolio==================*/
@@ -839,6 +843,11 @@ width: 100%;
 /*======================portfolio==================*/
 
 /*........................contact form................*/
+#contact{
+    
+    
+/*    margin-left:  20%;*/
+}
 #contactpage{
     
 /*    background-image: url(/images/piano.jpg);*/
@@ -849,14 +858,15 @@ width: 100%;
 max-width: 1208px;
 max-width: 75.5rem;
 margin: 0 auto;
-    padding: 4%;
+    
+    
 }
 #contact-form h2{
     color:ghostwhite;
     
 }
 #contact, label, input[name="submit"] {
-position: relative;
+/*position: relative;*/
 }
 label > span, input, textarea, button {
 box-sizing: border-box;
