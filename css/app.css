@@ -13,6 +13,26 @@ margin-left: auto;
 margin-right: auto; }
 */
 
+h1{
+    
+  font-family: 'Lobster', cursive;  
+}
+
+h2{
+    
+   font-family: 'Lobster', cursive; 
+}
+
+h3{
+ font-family: 'Orbitron', sans-serif;    
+    
+}
+
+p{
+    font-family: 'Architects Daughter', cursive;
+    font-size: 1em;
+}
+
     #container {
         width: 100%;
         padding: 2%;
@@ -31,7 +51,7 @@ margin-right: auto; }
     }
     #about p {
         /*        margin-top: 1em;*/
-        font-size: 2em;
+        font-size: 3em;
         color: #e8f380;
     }
     .about2 {
@@ -43,6 +63,7 @@ margin-right: auto; }
         color:ghostwhite;
     }
     .language h1 {
+        font-family: 'Lobster', cursive; 
         text-align: center;
     }
     /*=========================loader====================*/
@@ -244,6 +265,7 @@ margin-right: auto; }
     }
     .no-js h1 {
         color: #222222;
+        font-family: 'Lobster', cursive; 
     }
     /*=========================end loader====================*/
     /*=========================navigation====================*/
@@ -401,6 +423,7 @@ nav li{
     a {
         text-decoration: none;
     }
+/*
     h1 {
         font-size: 30px;
         line-height: 1.8;
@@ -412,6 +435,7 @@ nav li{
         font-size: 17px;
         line-height: 2;
     }
+*/
     .content {
         padding: 50px 2% 250px;
     }
@@ -428,42 +452,42 @@ background-color: black;
         background-size: cover;
         text-align: center;
         color: #fff;
-        padding-top: 110px;
+        padding-top: 1%;
         min-height: 800px;
-        letter-spacing: 2px;
+        letter-spacing: 0.25em;
         font-family: "Montserrat", sans-serif;
     }
     .hero h1 {
         outline-color: aqua;
-        font-size: 3em;
+        font-size: 5em;
         line-height: 1.3;
     }
     .hero h1 span {
         font-size: 0.7em;
         color: #e8f380;
-        border-bottom: 2px solid #e8f380;
-        padding-bottom: 12px;
-        line-height: 3;
+        border-bottom: 0.05em solid #e8f380;
+        padding-bottom: 0.5%;
+        line-height: 2em;
     }
     .mouse {
-        display: block;
+        display: inline-block;
         margin: 0 auto;
         width: 2em;
         height: 4em;
-        border-radius: 13px;
-        border: 2px solid #e8f380;
+        border-radius: 1rem;
+        border: 0.2em solid #e8f380;
         position: absolute;
         bottom: 30%;
-        position: absolute;
-        left: 50%;
-        margin-left: -26px;
+        position: static;
+        
     }
     .mouse span {
+        padding: 20%;
         display: block;
-        margin: 8px auto;
-        width: 2px;
-        height: 2px;
-        border-radius: 4px;
+        margin: 2em auto;
+        width:0.1em;
+        height: 1em;
+        border-radius: 1em;
         background: #e8f380;
         border: 1px solid transparent;
         -webkit-animation-duration: 1s;
@@ -507,7 +531,7 @@ background-color: black;
          margin-top: 20%;
         margin-bottom: 6%;
         text-align: center;
-        color: cyan;
+        color: ghostwhite;
         width: 100%;
         display: inline-block;
         
@@ -515,6 +539,7 @@ background-color: black;
 
 
     #section2 h1{
+        font-family: 'Lobster', cursive; 
         font-size: 3em;
         margin-top: -10%;
     }
@@ -803,6 +828,7 @@ max-width: 1200px;
             margin-right: 0.5rem;
         }
         #skills {
+            font-size: 0.5em;
             margin-top: -10%;
             
             display: inline-block;
