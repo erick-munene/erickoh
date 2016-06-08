@@ -1,16 +1,19 @@
 /*
-        html {
-        background-image: url(../images/black.jpg);
-        height: 100%;
-        background-repeat: no-repeat;
-        height: 120%;
-    }
-*/
-    /*
-.row {
-max-width: 100%;
-margin-left: auto;
-margin-right: auto; }
+html, body{
+  min-height: 100%;
+}
+body{
+  position: relative;
+}
+.overlay{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+  background-color: rgba(0,0,0,0.5); dim the background
+}
 */
 
 h1{
@@ -31,6 +34,7 @@ h3{
 p{
     font-family: 'Architects Daughter', cursive;
     font-size: 1em;
+    color: ghostwhite;
 }
 
     #container {
@@ -39,15 +43,16 @@ p{
     }
     #about {
 
-        
+        margin-top: 12%;
         display: inline;
         text-align: center;
         
     }
     #about h1 {
-/*        margin-top: 12%;*/
+        
         color: ghostwhite;
         font-size: 2.5em;
+        
     }
     #about p {
         /*        margin-top: 1em;*/
@@ -55,8 +60,10 @@ p{
         color: #e8f380;
     }
     .about2 {
+
+        margin-top: 12%;
         
-        background-color:black ;
+        
     }
 
     .about2 h2{
@@ -413,29 +420,17 @@ nav li{
     * {
         box-sizing: border-box;
     }
+
     body {
-        color: ghostwhite;
-        background-image: url(/images/black.jpg);
-        font-family: "Cardo", serif;
-        font-weight: 300;
+        
+        background-image: url(../images/black.jpg);
         -webkit-font-smoothing: antialiased;
     }
+
     a {
         text-decoration: none;
     }
-/*
-    h1 {
-        font-size: 30px;
-        line-height: 1.8;
-        text-transform: uppercase;
-        font-family: "Montserrat", sans-serif;
-    }
-    p {
-        margin-bottom: 20px;
-        font-size: 17px;
-        line-height: 2;
-    }
-*/
+
     .content {
         padding: 50px 2% 250px;
     }
@@ -849,7 +844,7 @@ max-width: 1200px;
 
 /*======================portfolio==================*/
 #port{
-    background-color: black;
+    background: url(../images/msc.jpg) no-repeat center center fixed;
     margin-top: 7%;
     
     
